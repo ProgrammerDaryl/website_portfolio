@@ -1,134 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63);
+            color: #fff;
+            text-align: center;
+        }
+
+        nav {
+            background: #000;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #744fe2;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #f06292;
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-size: 2.5em;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin: 10px 0 30px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        ul a {
+            color: #d53daf;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        ul a:hover {
+            color: #5f73cc;
+        }
+    </style>
 </head>
 <body>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Welcome</title>
-        <style>
-    
-            body {
-                margin: 0;
-                padding: 0;
-                font-family: Arial, sans-serif;
-                background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-                color: #fff;
-            }
-    
-            nav {
-                background: #000;
-                padding: 10px 20px;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                position: sticky;
-                top: 0;
-                z-index: 1000;
-            }
-    
-            nav a {
-                color: #fff;
-                text-decoration: none;
-                margin: 0 15px;
-                font-size: 1.2em;
-                transition: color 0.3s;
-            }
-    
-            nav a:hover {
-                color: #744fe2;
-            }
-    
-            .logo {
-                font-size: 1.5em;
-                font-weight: bold;
-                color: #f06292;
-            }
-    
-    
-            .gallery {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 15px;
-                padding: 40px 20px;
-            }
-    
-            .gallery img {
-                width: 150px;
-                height: 200px;
-                object-fit: cover;
-                border-radius: 10px;
-                transition: transform 0.3s, box-shadow 0.3s;
-            }
-    
-            .gallery img:hover {
-                transform: scale(1.1);
-                box-shadow: 0 0 20px 5px #744fe2;
-            }
-    
-    
-            .bottom-container {
-                background: rgba(0, 0, 0, 0.8);
-                padding: 30px;
-                border-radius: 10px;
-                margin: 20px auto;
-                max-width: 800px;
-                text-align: center;
-                color: #ccc;
-            }
-    
-            .bottom-container h2 {
-                font-size: 2em;
-                color: #f06292;
-                margin-bottom: 20px;
-            }
-    
-            .bottom-container p {
-                font-size: 1.2em;
-                line-height: 1.6;
-            }
-    
-    
-            footer {
-                text-align: center;
-                padding: 20px;
-                background: #000;
-                color: #666;
-                font-size: 0.9em;
-            }
-    
-            footer a {
-                color: #88200b;
-                text-decoration: none;
-            }
-    
-            footer a:hover {
-                text-decoration: underline;
-            }
-        </style>
-    </head>
-    <h1>Welcome to Our Website</h1>
-
+    <!-- Navigation Bar -->
     <nav>
         <div class="logo">Welcome</div>
-        <ul>
-            <a href="/home">Home</a>
+        <div>
+            <a href="http://127.0.0.1:5000/">Home</a>
             <a href="/profile">Profile</a>
             <a href="/works">Works</a>
             <a href="/contact">Contact</a>
-        </ul>
+        </div>
     </nav>
 
-
-    <h1>Welcome to my programming works</h1>
-    <p>Instruction: create a route and a page for the link that are not working</p>
+    <!-- Main Content -->
+    <h1>Welcome to My Programming Works</h1>
+    <p>Instructions: Create a route and a page for the links below that are not working.</p>
 
     <ul>
         <li><a href="/works">toUpperCase</a></li>
-        <li><a href="/areaOfcirle">Area of a Circle</a></li>
+        <li><a href="/areaOfCircle">Area of a Circle</a></li>
         <li><a href="/areaOfTriangle">Area of a Triangle</a></li>
     </ul>
 </body>
