@@ -12,8 +12,13 @@
             background: linear-gradient(135deg, #0f0c29, #302b63);
             color: #fff;
             text-align: center;
+            max-width: 2000px;
+            max-height: 50px;
         }
 
+        h1 {
+            font-family: Arial, sans-serif;
+        }
         nav {
             background: #000;
             padding: 10px 20px;
@@ -72,10 +77,24 @@
         ul a:hover {
             color: #5f73cc;
         }
+        .bottom-container {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: center;
+            color: #ccc;
+        }
+
+        .bottom-container h2 {
+            font-size: 2em;
+            color: #f06292;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
-    <!-- Navigation Bar -->
     <nav>
         <div class="logo">Welcome</div>
         <div>
@@ -86,14 +105,16 @@
         </div>
     </nav>
 
-    <!-- Main Content -->
     <h1>Welcome to My Programming Works</h1>
     <p>Instructions: Create a route and a page for the links below that are not working.</p>
 
+    
     <ul>
+        <div class="bottom-container">
         <li><a href="/works">toUpperCase</a></li>
         <li><a href="/areaOfCircle">Area of a Circle</a></li>
         <li><a href="/areaOfTriangle">Area of a Triangle</a></li>
+        </div>
     </ul>
 </body>
 </html>
