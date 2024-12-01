@@ -6,13 +6,14 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+@app.route('/home')
+def home():
+    return render_template('home.html')
+
 @app.route('/profile')
 def profile():
     return render_template('profile.html')
 
-@app.route('/home')
-def home():
-    return render_template('home.html')
 
 @app.route('/works', methods=['GET', 'POST'])
 def works():
